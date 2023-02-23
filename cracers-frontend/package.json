@@ -1,0 +1,49 @@
+{
+  "name": "nextjs-with-typescript",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "latest",
+    "@mui/x-data-grid": "^5.13.1",
+    "@mui/x-date-pickers": "^5.0.0-beta.5",
+    "@project-serum/anchor": "^0.25.0",
+    "@solana/wallet-adapter-base": "^0.9.5",
+    "@solana/wallet-adapter-material-ui": "^0.16.6",
+    "@solana/wallet-adapter-react": "^0.15.5",
+    "@solana/wallet-adapter-react-ui": "^0.9.7",
+    "@solana/wallet-adapter-wallets": "^0.16.1",
+    "@solana/web3.js": "^1.44.2",
+    "@svgr/webpack": "^6.2.1",
+    "axios": "^0.27.2",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "cryptocurrency-icons": "^0.18.0",
+    "date-fns": "^2.29.1",
+    "mongodb": "^4.8.0",
+    "next": "latest",
+    "react": "latest",
+    "react-crypto-icons": "^1.0.5",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.3.0",
+    "react-uuid": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "^18.0.6",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest"
+  }
+}

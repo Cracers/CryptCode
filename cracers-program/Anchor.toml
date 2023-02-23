@@ -1,0 +1,18 @@
+[programs.localnet]
+cracers_program = "2CeTkaECooXS4sc45KnW2g9k4JWkST5q56e1hpFtU6Fv"
+
+[programs.devnet]
+cracers_program = "2CeTkaECooXS4sc45KnW2g9k4JWkST5q56e1hpFtU6Fv"
+
+[programs.mainnet]
+cracers_program = "3WFbj2c24xazpewqPTCjVpnMnLBMJneZy5Fh4H7BTGBW"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "mainnet"
+wallet = "/home/mdupree/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

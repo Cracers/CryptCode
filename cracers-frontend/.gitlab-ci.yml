@@ -1,0 +1,16 @@
+image: node:current-alpine3.16
+
+stages:
+  - cron
+
+cron:
+  stage: cron
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+  variables:
+    NEXT_PUBLIC_SOLANA_NETWORK: mainnet-beta
+    NEXT_PUBLIC_SOLANA_RPC_URL: https://autumn-billowing-moon.solana-mainnet.quiknode.pro/414a891056dc990fbec61a187069ef2d79b97f38/
+  script:
+    - yarn install
+    - echo "Running cron"
+    - node ./bin/getPrices.js

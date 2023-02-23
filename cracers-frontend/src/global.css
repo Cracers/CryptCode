@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'Nasa2';
+  src: url('../public/fonts/nasalization-rg.otf') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'jetbrains';
+  src: url('../public/fonts/Jet_Brains_Mono/ttf/JetBrainsMono-Regular.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'jetbrains';
+  src: url('../public/fonts/Jet_Brains_Mono/ttf/JetBrainsMono-Bold.ttf');
+  font-weight: 900;
+  font-style: bold;
+}
+
+
+
+
+body {
+  background-image: url("../public/assets/bg1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Slant', cursive;
+  min-width: 320px;
+}
+
+html,
+body,
+#__next,
+.AppContainer,
+.bg-overlay {
+  min-height: 100vh;
+}
+
+.AppContainer {
+  margin-bottom: 3rem;
+  height: 100%;
+}
+
+.nasa-font, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nasa2'!important;
+}
+
+.digital-font {
+  font-family: 'PressStart';
+}
+
+.header-img-background {
+  width: 560px;
+  padding: 5% 7% 5% 7%;
+  background-image: url(https://cracers.com/wp-content/uploads/2022/03/Title-Bg.png);
+  background-position: 3px 13px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header-img-text {
+  color: #DDBCF9;
+  /* font-family: "good times rg", Sans-serif; */
+  font-size: 2.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 10px rgb(0 0 0 / 97%);
+  margin-top: 0.15em;
+}
+
+.leaderboard * {
+  font-family: 'Bebas Neue', 'Arial';
+  /* font-size: 1.5rem!important; */
+}
+
+.leaderboard th {
+  font-family: 'Bebas Neue', 'Arial';
+  /* font-size: 1.5rem!important; */
+  background: #29013fcc!important;
+  color:aquamarine!important;
+}
+.leaderboard-expand, .leaderboard-expand tr, .leaderboard-expand th {
+  /* font-size: 1.5rem!important; */
+  background: #2d3a5e!important;
+}
+
+.leaderboard tr {
+  /* font-size: 1.5rem!important; */
+  background: #2d3a5e!important;
+}
+
+.MuiPaper-root {
+  font-family: 'PressStart';
+  background-image: none;
+  background: #3b0259cc;
+  /* color: cyan!important; */
+  text-shadow: 0 0 8px cyan;
+
+}
+
+
+
+.MuiDialogTitle-root, .MuiList-root {
+  background-color: rgb(0, 0, 0)!important;
+  /* border: 1px solid cyan!important; */
+
+}
+
+.MuiDialogContent-root .MuiList-root .MuiListItem-root .MuiButton-root {
+  color: rgba(0, 255, 255, 0.562)!important;
+}
+.MuiDialogContent-root .MuiList-root .MuiListItem-root .MuiButton-root:hover {
+  /* color: rgb(0, 255, 255)!important; */
+
+  text-shadow: 0 0 16px cyan;
+}
+
+
+/* RACE CARD */
+.raceCard {
+  border: 2px solid #2d0144cc;
+  border-radius: 15px;
+  -webkit-box-shadow:0 0 20px #6b00b3; 
+  -moz-box-shadow: 0 0 20px #6b00b3; 
+  box-shadow:0 0 20px #6b00b3;
+}
+
+.wallet-adapter-modal-wrapper {
+  background-image: initial;
+  background-color: rgb(26, 13, 28);
+  box-shadow: rgba(38, 255, 0, 0.6) 0px 8px 20px;
+  z-index: 9999;
+  position: absolute;
+  top:10%;
+  left:30%;
+  /* height:40%; */
+  width: 40%;
+}
+
+.wallet-modal-text  {
+  /* font-size: 1.2rem; */
+  /* font-family: 'PressStart'; */
+  background: '-webkit-linear-gradient(#fff, #f2f2f2)';
+  background-clip: 'text';
+  -webkit-background-clip: 'text';
+  -webkit-text-fill-color: 'transparent';
+}
+
+.wallet-modal-link-text, .wallet-dropdown  {
+  /* font-size: 1rem; */
+  /* font-family: 'PressStart'; */
+  background: '-webkit-linear-gradient(#fff, #f2f2f2)';
+  background-clip: 'text';
+  -webkit-background-clip: 'text';
+  -webkit-text-fill-color: 'transparent';
+}
+
+.wallet-modal-link-text:hover, .wallet-dropdown:hover  {
+
+  color:aquamarine;
+  /* font-family: 'PressStart'; */
+  background: '-webkit-linear-gradient(#fff, #f2f2f2)';
+  background-clip: 'text';
+  -webkit-background-clip: 'text';
+  -webkit-text-fill-color: 'transparent';
+}
+
+.wallet-adapter-modal-list {
+  padding: 0;
+}
+
+.wallet-adapter-dropdown-list {
+  position: absolute;
+  z-index: 99;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-row-gap: 10px;
+  padding: 10px;
+  top: 100%;
+  right: 0;
+  margin: 0;
+  list-style: none;
+  /* background: #2c2d30; */
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgb(0 0 0 / 60%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease, transform 200ms ease, visibility 200ms;
+  /* font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+}
+
+/* Tutorial page */
+.tutorial-index {
+  /* font-size: 4rem; */
+    display: inline;
+    float: left;
+    margin: 0 25px 0 0;
+}
+.tutorial-subheader {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
